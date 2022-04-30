@@ -1,7 +1,7 @@
-# Tasty Tater Tots
+# Weather Dashboard
 
   
-  ![badge](https://img.shields.io/badge/license-MozillaPublicLicense2.0-brightgreen)
+  ![badge](https://img.shields.io/badge/license-TheUnlicense-brightgreen)
 
 
   ## Table of Contents
@@ -14,26 +14,26 @@
   - [Questions](#questions)
 
   ## Description:
-  Tater tots are grated potatoes formed into small cylinders and deep-fried, often served as a side dish. The name "tater tot" is a registered trademark of the American frozen food company Ore-Ida, but is often used as a generic term.
+  This is a Weather application that gives back basic weather data from 'openweathermap.org' after a user enters a city name. They are also presented with a 5 day forcast and previous searched city history.
 
   ## Installation:
-  Usually with an Oven or Fryer
+  View through website URL: https://t0rgy.github.io/weather-dashboard/
 
   ## Usage:
-  With their mouths
+  User can enter a city name and the application will pull information from a weather api to display a forcast for the current day and the follwing 5 days. It will also store past searches. 
 
   ## License:
-  _This application has MozillaPublicLicense2.0._
+  _This application has TheUnlicense._
       
-  For more information please view the [license description](https://choosealicense.com/licenses/mpl-2.0/).
+  For more information please view the [license description](https://choosealicense.com/licenses/unlicense/).
 
   ## Contribution:
-  Grow more potatoes
+  N/A
 
   ## Testing:
-  no
+  N/A
 
   ## If any questions please contact at:
-  - GitHub: [T0rgy](https://github.com/T0rgy)
-  - Email: 
+  - GitHub: [t0rgy](https://github.com/t0rgy)
+  - Email: JCTORGE@gmail.com
 
