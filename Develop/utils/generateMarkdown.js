@@ -1,24 +1,44 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// 
+function renderLicenseBadge(license) {
+  let licenseChoice = `${data.licensing}`;
+  let licenseLink = '';
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+  if (licenseChoice === 'GNUAGPLv3') {
+    licenseLink = 'https://choosealicense.com/licenses/agpl-3.0/';
+  };
+  if (licenseChoice === '') {
+    licenseLink = '';
+  };
+  if (licenseChoice === '') {
+    licenseLink = '';
+  };
+  if (licenseChoice === '') {
+    licenseLink = '';
+  };
+  if (licenseChoice === '') {
+    licenseLink = '';
+  };
+  if (licenseChoice === '') {
+    licenseLink = '';
+  };
+  if (licenseChoice === '') {
+    licenseLink = '';
+  };
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ## Licensing:
+  [![badge](https://img.shield.io/badge/license-${data.licensing}-blue)](https://shield.io)
 
 
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [License](#license)
   - [Contribution](#contribution)
   - [Testing](#testing)
   - [Questions](#questions)
@@ -33,7 +53,9 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License:
-  ${data.license}
+  _This application has the ${data.licensing}._
+      
+  For more information please view the [license description](${licenseLink}).
 
   ## Contribution:
   ${data.contribution}

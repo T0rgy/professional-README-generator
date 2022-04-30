@@ -44,6 +44,34 @@ const questions = [
             }
         }
     },
+    { // Usage Information
+        type: 'input',
+        name: 'usage',
+        message: 'Describe how a a user/contributor can use this project. (Required)',
+        validate: usageInput => {
+            if (usageInput) {
+                return true;
+            } else {
+                console.log('Please describe how to use this project!');
+                return false;
+            }
+        }
+
+    },
+    { // License Options
+        type: 'checkbox',
+        name: 'licensing',
+        message: 'Choose a license for your project. (Required)',
+        choices: ['GNUAGPLv3', 'GNUGPLv3', 'MozillaPublicLicense2.0', 'ApacheLicense2.0', 'MITLicense', 'BoostSoftwareLicense1.0', 'TheUnlicense', 'None'],
+        validate: licensingInput => {
+            if (licensingInput) {
+                return true;
+            } else {
+                console.log('Please pick a license!');
+                return false;
+            }
+        }
+    },
     { // Contribuition Guidlines
         type: 'input',
         name: 'contribution',
@@ -57,19 +85,10 @@ const questions = [
             }
         }
     },
-    { // License Options
-        type: 'checkbox',
-        name: 'licensing',
-        message: 'Choose a license for your project. (Required)',
-        choices: ['Apache', 'Common-Development-and Distribution', 'GNU-General-Public', 'MIT', 'Mozilla-Public', 'None'],
-        validate: licensingInput => {
-            if (licensingInput) {
-                return true;
-            } else {
-                console.log('Please pick a license!');
-                return false;
-            }
-        }
+    {// Testing information
+        type: 'input',
+        name: 'testing',
+        message: 'Please enter any testing available. (Optional)',
     },
     { // GitHub Username
         type: 'input',
