@@ -18,6 +18,9 @@
   ## Usage: 
   Run the command node index.js in the client and the inquirer package will begin prompts for your README section information. As you answer each question you dynamically form the Template for your README file. 
 
+  ## Video Demonstration
+[Readme Generator Walkthrough](https://drive.google.com/file/d/1nIbkSyFiGfxKNNUqg_Z3St5SzoNtaPgh/view)
+
   ## License:
   _This application has the No licensing._
   
